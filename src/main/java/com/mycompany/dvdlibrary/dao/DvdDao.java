@@ -3,11 +3,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.dvdlibrary.dao;
+import com.mycompany.dvdlibrary.dto.DVD;
+import java.util.List;
 
-/**
- *
- * @author bafsharim
- */
-public class DvdDao {
-    
+
+public interface DvdDao {
+
+    DVD getDVDByTitle(String title);
+
+    List<DVD> getAllDVD();
+
+    DVD addDVD(DVD dvd);
+
+    void updateDVD(DVD dvd);
+
+    void deleteDVDByTitle(String title);
+
 }
