@@ -19,7 +19,7 @@ public class DvdView {
         this.io = io;
     }
 
-    public void displayBookTrackerBanner() {
+    public void displayDvdTrackerBanner() {
         io.print("Welcome to the DVD Library");
     }
 
@@ -40,7 +40,7 @@ public class DvdView {
         io.print("ERROR: " + error);
     }
 
-    public void displayAllBooks(List<DVD>dvd) {
+    public void displayAllDVD(List<DVD>dvd) {
         io.print("");
         io.print("All DVDs");
         dvd.stream()
